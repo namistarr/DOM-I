@@ -68,7 +68,8 @@ const nav6Green = document.getElementsByTagName("a")[5].style.color="green"
 const nav7Green = document.getElementsByTagName("a")[6].style.color="green"
 const nav8Green = document.getElementsByTagName("a")[7].style.color="green"
 
-const mainHeader = document.querySelector("h1");
+//const mainHeader = document.querySelector("h1");
+const mainHeader= document.getElementsByTagName("h1")[0].innerHTML=`DOM<br> IS<br> AWESOME`;
 const headerButton = document.querySelector("button");
 const headerImg = document.getElementById("cta-img");
 const h4 = document.querySelectorAll("h4");
