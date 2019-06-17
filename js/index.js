@@ -40,3 +40,43 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+const nav1 = document.getElementsByTagName("a")[1].innerHTML=`${siteContent.nav["nav-item-1"]}`;
+const nav2 = document.getElementsByTagName("a")[2].innerHTML=`${siteContent.nav["nav-item-2"]}`;
+const nav3 = document.getElementsByTagName("a")[3].innerHTML=`${siteContent.nav["nav-item-3"]}`;
+const nav4 = document.getElementsByTagName("a")[4].innerHTML=`${siteContent.nav["nav-item-4"]}`;
+const nav5 = document.getElementsByTagName("a")[5].innerHTML=`${siteContent.nav["nav-item-5"]}`;
+const nav6 = document.getElementsByTagName("a")[5].innerHTML=`${siteContent.nav["nav-item-6"]}`;
+
+const newNav1 = document.getElementsByTagName("nav")[0]
+let newLink = document.createElement("a")
+newLink.textContent="JS Hurts"
+newNav1.appendChild(newLink);
+
+const newNav2 = document.getElementsByTagName("nav")[0]
+let anotherNewLink = document.createElement("a")
+anotherNewLink.textContent="Ouch"
+newNav2.prepend(anotherNewLink);
+
+const nav1Green = document.getElementsByTagName("a")[0].style.color="green"
+const nav2Green = document.getElementsByTagName("a")[1].style.color="green"
+const nav3Green = document.getElementsByTagName("a")[2].style.color="green"
+const nav4Green = document.getElementsByTagName("a")[3].style.color="green"
+const na5Green = document.getElementsByTagName("a")[4].style.color="green"
+const nav6Green = document.getElementsByTagName("a")[5].style.color="green"
+const nav7Green = document.getElementsByTagName("a")[6].style.color="green"
+const nav8Green = document.getElementsByTagName("a")[7].style.color="green"
+
+const mainHeader = document.querySelector("h1");
+const headerButton = document.querySelector("button");
+const headerImg = document.getElementById("cta-img");
+const h4 = document.querySelectorAll("h4");
+const paragraphs = document.querySelectorAll("p")
+const middleImg = document.getElementById("middle-img");
+
+
+mainHeader.textContent = siteContent["cta"]["h1"];
+
+headerImg.setAttribute("src", siteContent["cta"]["img-src"]);
+headerButton.textContent = siteContent["cta"]["button"];
