@@ -80,3 +80,17 @@ mainHeader.textContent = siteContent["cta"]["h1"];
 
 headerImg.setAttribute("src", siteContent["cta"]["img-src"]);
 headerButton.textContent = siteContent["cta"]["button"];
+
+h4[0].textContent = siteContent["main-content"]["features-h4"];
+h4[1].textContent = siteContent["main-content"]["about-h4"];
+h4[2].textContent = siteContent["main-content"]["services-h4"];
+h4[3].textContent = siteContent["main-content"]["product-h4"];
+h4[4].textContent = siteContent["main-content"]["vision-h4"];
+
+paragraphs[0].textContent = siteContent["main-content"]["features-content"];
+paragraphs[1].textContent = siteContent["main-content"]["about-content"];
+paragraphs[2].textContent = siteContent["main-content"]["services-content"];
+paragraphs[3].textContent = siteContent["main-content"]["product-content"];
+paragraphs[4].textContent = siteContent["main-content"]["vision-content"];
+
+middleImg.setAttribute("src", siteContent["main-content"]["middle-img-src"]);
